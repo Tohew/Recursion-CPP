@@ -17,5 +17,5 @@ float Tong(int n)
 {
 	if (n == 0)
 		return 1;
-	return (Tong(n - 1) + (float)1 / (2 * n));
+	return (Tong(n - 1) + (float)1 / (n * (n + 1)));
 }
