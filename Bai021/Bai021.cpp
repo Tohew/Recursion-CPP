@@ -11,7 +11,7 @@ int main()
 	cin >> k;
 	cin >> y;
 	float kq = Tong(y, k);
-	cout << "Tong la: " << kq;
+	cout << "Ket qua la: " << kq;
 	return 1;
 }
 

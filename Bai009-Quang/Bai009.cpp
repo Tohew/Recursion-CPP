@@ -1,21 +1,23 @@
 #include <iostream>
 using namespace std;
 
-float Tong(int);
+float Tong(float , int);
 
 int main()
 {
 	int k;
 	cout << "Nhap so nguyen: ";
 	cin >> k;
-	float kq = Tong(k);
+	float y;
+	cout << " Nhap x: ";
+	cin >> y;
+	float kq = Tong(y, k);
 	cout << "Tong la: " << kq;
 	return 1;
 }
-
-float Tong(int n)
+float Tong(float x, int n)
 {
 	if (n == 0)
 		return 1;
-	return (Tong(n - 1) + (float)1 / (n*(n+1)));
+	return (Tong(x, n - 1)*x);
 }
